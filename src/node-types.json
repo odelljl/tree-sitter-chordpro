@@ -1,12 +1,637 @@
 [
   {
-    "type": "source_file",
+    "type": "album_directive",
     "named": true,
-    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "artist_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "author_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "capo_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "chord",
+    "named": true,
     "fields": {}
   },
   {
-    "type": "hello",
+    "type": "comment_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "composer_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "copyright_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "album_directive",
+          "named": true
+        },
+        {
+          "type": "artist_directive",
+          "named": true
+        },
+        {
+          "type": "author_directive",
+          "named": true
+        },
+        {
+          "type": "capo_directive",
+          "named": true
+        },
+        {
+          "type": "comment_directive",
+          "named": true
+        },
+        {
+          "type": "composer_directive",
+          "named": true
+        },
+        {
+          "type": "copyright_directive",
+          "named": true
+        },
+        {
+          "type": "end_of_bridge_directive",
+          "named": true
+        },
+        {
+          "type": "end_of_chorus_directive",
+          "named": true
+        },
+        {
+          "type": "end_of_tab_directive",
+          "named": true
+        },
+        {
+          "type": "end_of_verse_directive",
+          "named": true
+        },
+        {
+          "type": "key_directive",
+          "named": true
+        },
+        {
+          "type": "lyricist_directive",
+          "named": true
+        },
+        {
+          "type": "start_of_bridge_directive",
+          "named": true
+        },
+        {
+          "type": "start_of_chorus_directive",
+          "named": true
+        },
+        {
+          "type": "start_of_tab_directive",
+          "named": true
+        },
+        {
+          "type": "start_of_verse_directive",
+          "named": true
+        },
+        {
+          "type": "subtitle_directive",
+          "named": true
+        },
+        {
+          "type": "tempo_directive",
+          "named": true
+        },
+        {
+          "type": "time_directive",
+          "named": true
+        },
+        {
+          "type": "title_directive",
+          "named": true
+        },
+        {
+          "type": "year_directive",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "empty_line",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "end_of_bridge_directive",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "end_of_chorus_directive",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "end_of_tab_directive",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "end_of_verse_directive",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "key_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lyricist_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "song_line",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "chord",
+          "named": true
+        },
+        {
+          "type": "lyrics_text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "directive",
+          "named": true
+        },
+        {
+          "type": "empty_line",
+          "named": true
+        },
+        {
+          "type": "song_line",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "start_of_bridge_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "start_of_chorus_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "start_of_tab_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "start_of_verse_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "subtitle_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tempo_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "time_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "title_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "year_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_text",
+          "named": true
+        },
+        {
+          "type": "one_space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "album",
+    "named": false
+  },
+  {
+    "type": "artist",
+    "named": false
+  },
+  {
+    "type": "author",
+    "named": false
+  },
+  {
+    "type": "capo",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": false
+  },
+  {
+    "type": "composer",
+    "named": false
+  },
+  {
+    "type": "copyright",
+    "named": false
+  },
+  {
+    "type": "directive_text",
+    "named": true
+  },
+  {
+    "type": "end_of_bridge",
+    "named": false
+  },
+  {
+    "type": "end_of_chorus",
+    "named": false
+  },
+  {
+    "type": "end_of_tab",
+    "named": false
+  },
+  {
+    "type": "end_of_verse",
+    "named": false
+  },
+  {
+    "type": "key",
+    "named": false
+  },
+  {
+    "type": "lyricist",
+    "named": false
+  },
+  {
+    "type": "lyrics_text",
+    "named": true
+  },
+  {
+    "type": "one_space",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "start_of_bridge",
+    "named": false
+  },
+  {
+    "type": "start_of_chorus",
+    "named": false
+  },
+  {
+    "type": "start_of_tab",
+    "named": false
+  },
+  {
+    "type": "start_of_verse",
+    "named": false
+  },
+  {
+    "type": "subtitle",
+    "named": false
+  },
+  {
+    "type": "tempo",
+    "named": false
+  },
+  {
+    "type": "time",
+    "named": false
+  },
+  {
+    "type": "title",
+    "named": false
+  },
+  {
+    "type": "year",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "}",
     "named": false
   }
 ]
